@@ -1,0 +1,43 @@
+/* style.css */
+
+/* Estilos generales y reset */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding-top: 80px; /* Espacio para el header fijo */
+}
+
+/* Header */
+header {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Botones */
+.btn {
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
